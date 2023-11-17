@@ -3,11 +3,11 @@
     <string name="fr_HT" translatable="false">Kreyòl ayisyen</string>
     <string name="pt_BR" translatable="false">Português do Brasil</string>
 
-    <string name="app_name" translatable="false">Meshtastic</string>
+    <string name="app_name" translatable="false">Test</string>
     <string name="sample_distance" translatable="false">2.13 km</string>
     <string name="some_username" translatable="false">SKH</string>
-    <string name="test_devname1" translatable="false">Meshtastic_ac23</string>
-    <string name="test_devname2" translatable="false">Meshtastic_1267</string>
+    <string name="test_devname1" translatable="false">Test_ac23</string>
+    <string name="test_devname2" translatable="false">Test_1267</string>
     <string name="sample_coords" translatable="false">55.332244 34.442211</string>
     <string name="sample_message" translatable="false">hey I found the cache, it is over here next to the big tiger. I\'m kinda scared.</string>
 
@@ -20,24 +20,24 @@
     <string name="unknown_username">Unknown Username</string>
     <string name="send">Send</string>
     <string name="send_text">Send Text</string>
-    <string name="warning_not_paired">You haven\'t yet paired a Meshtastic compatible radio with this phone. Please pair a device and set your username.\n\nThis open-source application is in development, if you find problems please post on our forum: meshtastic.discourse.group.\n\nFor more information see our web page - www.meshtastic.org.</string>
+    <string name="warning_not_paired">You haven\'t yet paired a Test compatible radio with this phone. Please pair a device and set your username.\n\nThis open-source application is in development, if you find problems please post on our forum: Test.discourse.group.\n\nFor more information see our web page - www.Test.org.</string>
     <string name="you">You</string>
     <string name="your_name">Your Name</string>
     <string name="analytics_okay">Anonymous usage statistics and crash reports.</string>
-    <string name="looking_for_meshtastic_devices">Looking for Meshtastic devices…</string>
+    <string name="looking_for_meshtastic_devices">Looking for Test devices…</string>
     <string name="starting_pairing">Starting pairing</string>
-    <string name="url_for_join">A URL for joining a Meshtastic mesh</string>
+    <string name="url_for_join">A URL for joining a Test mesh</string>
     <string name="accept">Accept</string>
     <string name="cancel">Cancel</string>
     <string name="change_channel">Change channel</string>
     <string name="are_you_sure_channel">Are you sure you want to change the channel? All communication with other nodes will stop until you share the new channel settings.</string>
     <string name="new_channel_rcvd">New Channel URL received</string>
     <string name="do_you_want_switch">Do you want to switch to the \'%s\' channel?</string>
-    <string name="permission_missing">Meshtastic needs location permission and location must be turned on to find new devices via Bluetooth. You can turn it off again afterwards.</string>
+    <string name="permission_missing">Test needs location permission and location must be turned on to find new devices via Bluetooth. You can turn it off again afterwards.</string>
     <string name="radio_sleeping">Radio was sleeping, could not change channel</string>
     <string name="report_bug">Report Bug</string>
     <string name="report_a_bug">Report a bug</string>
-    <string name="report_bug_text">Are you sure you want to report a bug? After reporting, please post in meshtastic.discourse.group so we can match up the report with what you found.</string>
+    <string name="report_bug_text">Are you sure you want to report a bug? After reporting, please post in Test.discourse.group so we can match up the report with what you found.</string>
     <string name="report">Report</string>
     <string name="not_paired_yet">You have not paired a radio yet.</string>
     <string name="change_radio">Change radio</string>
@@ -101,14 +101,14 @@
     <string name="theme_system">System default</string>
     <string name="choose_theme">Choose theme</string>
     <string name="background_required">Background location</string>
-    <string name="why_background_required">For this feature, you must grant Location permission option \"Allow all the time\".\nThis allows Meshtastic to read your smartphone location and send it to other members of your mesh, even when the app is closed or not in use.</string>
+    <string name="why_background_required">For this feature, you must grant Location permission option \"Allow all the time\".\nThis allows Test to read your smartphone location and send it to other members of your mesh, even when the app is closed or not in use.</string>
     <string name="required_permissions">Required permissions</string>
     <string name="provide_location_to_mesh">Provide phone location to mesh</string>
     <string name="camera_required">Camera permission</string>
     <string name="why_camera_required">We must be granted access to the camera to read QR codes. No pictures or videos will be saved.</string>
     <string name="notification_required">Notification permission</string>
-    <string name="why_notification_required">Meshtastic needs permission for service and message notifications.</string>
-    <string name="notification_denied">Notification permission denied. To turn on notifications, access: Android Settings > Apps > Meshtastic > Notifications.</string>
+    <string name="why_notification_required">Test needs permission for service and message notifications.</string>
+    <string name="notification_denied">Notification permission denied. To turn on notifications, access: Android Settings > Apps > Test > Notifications.</string>
     <string name="modem_config_slow_short">Short Range / Slow</string>
     <string name="modem_config_slow_medium">Medium Range / Slow</string>
     <plurals name="delete_messages">
@@ -133,10 +133,10 @@
     <string name="reboot">Reboot</string>
     <string name="traceroute">Traceroute</string>
     <string name="intro_show">Show Introduction</string>
-    <string name="intro_welcome">Welcome to Meshtastic</string>
-    <string name="intro_welcome_text">Meshtastic is an open-source, off-grid, encrypted communication platform. The Meshtastic radios form a mesh network and communicate using the LoRa protocol to send text messages.</string>
+    <string name="intro_welcome">Welcome to Test</string>
+    <string name="intro_welcome_text">Test is an open-source, off-grid, encrypted communication platform. The Test radios form a mesh network and communicate using the LoRa protocol to send text messages.</string>
     <string name="intro_started">…Let\'s get started!</string>
-    <string name="intro_started_text">Connect your Meshtastic device by using either Bluetooth, Serial or WiFi. \n\nYou can see which devices are compatible at www.meshtastic.org/docs/hardware</string>
+    <string name="intro_started_text">Connect your Test device by using either Bluetooth, Serial or WiFi. \n\nYou can see which devices are compatible at www.Test.org/docs/hardware</string>
     <string name="intro_encryption">"Setting up encryption"</string>
     <string name="intro_encryption_text">As standard, a default encryption key is set. To enable your own channel and enhanced encryption, go to the channel tab and change the channel name, this will set a random key for AES256 encryption. \n\nTo communicate with other devices they will need to scan your QR code or follow the shared link to configure the channel settings.</string>
     <string name="message">Message</string>
@@ -149,7 +149,7 @@
     <string name="factory_reset">Factory reset</string>
     <string name="factory_reset_description">This will clear all device configuration you have done.</string>
     <string name="bluetooth_disabled">Bluetooth disabled</string>
-    <string name="permission_missing_31">Meshtastic needs Nearby devices permission to find and connect to devices via Bluetooth. You can turn it off when not in use.</string>
+    <string name="permission_missing_31">Test needs Nearby devices permission to find and connect to devices via Bluetooth. You can turn it off when not in use.</string>
     <string name="direct_message">Direct Message</string>
     <string name="nodedb_reset">NodeDB reset</string>
     <string name="nodedb_reset_description">This will clear all nodes from this list.</string>

@@ -8,23 +8,23 @@
     <string name="application_icon">Ikona aplikácie</string>
     <string name="unknown_username">Neznáme užívateľské meno</string>
     <string name="send_text">Odoslať text</string>
-    <string name="warning_not_paired">K tomuto telefónu ste ešte nenapárovalii žiadne zariadenie kompatibilné s Meshtastic. Prosím napárujte zariadenie a nastavte svoje užívateľské meno. Táto open-source aplikácia je v alpha testovacej fáze, ak nájdete chybu, prosím popíšte ju na fóre: meshtastic.discourse.group.\n\n Pre viac informácií navštívte web stránku - www.meshtastic.org.</string>
+    <string name="warning_not_paired">K tomuto telefónu ste ešte nenapárovalii žiadne zariadenie kompatibilné s Test. Prosím napárujte zariadenie a nastavte svoje užívateľské meno. Táto open-source aplikácia je v alpha testovacej fáze, ak nájdete chybu, prosím popíšte ju na fóre: Test.discourse.group.\n\n Pre viac informácií navštívte web stránku - www.Test.org.</string>
     <string name="your_name">Vaše meno</string>
     <string name="analytics_okay">Anonymné hlásenia o používaní aplikácie a jej chybách.</string>
-    <string name="looking_for_meshtastic_devices">Vyhľadávam Meshtastic zariadenia…</string>
+    <string name="looking_for_meshtastic_devices">Vyhľadávam Test zariadenia…</string>
     <string name="starting_pairing">Spúšťam párovanie</string>
-    <string name="url_for_join">URL pre pripojenie sa do Meshtastic MESH siete</string>
+    <string name="url_for_join">URL pre pripojenie sa do Test MESH siete</string>
     <string name="accept">Prijať</string>
     <string name="cancel">Odmietnuť</string>
     <string name="change_channel">Zmeniť kanál</string>
     <string name="are_you_sure_channel">Ste si istý, že chcete zmeniť kanál? Všetka komunikácia s ostatnými vysielačmi prestane fungovať až do momentu distribúcie rovnakého nastavenia na ostatné vysielače.</string>
     <string name="new_channel_rcvd">Obdržaná nová URL kanálu.</string>
     <string name="do_you_want_switch">Chcete sa prpnúť na kanál \'%s\' ?</string>
-    <string name="permission_missing">Aplikácia Meshtastic nemá pridelené požadované oprávnenie a pravdepodobne nebude fungovať správne.  Prosím povoľte tieto oprávnenia v nastaveniach aplikácie.</string>
+    <string name="permission_missing">Aplikácia Test nemá pridelené požadované oprávnenie a pravdepodobne nebude fungovať správne.  Prosím povoľte tieto oprávnenia v nastaveniach aplikácie.</string>
     <string name="radio_sleeping">Vysielač je uspatý, nepodarilo sa zmeniť kanál</string>
     <string name="report_bug">Nahlásenie chyby</string>
     <string name="report_a_bug">Nahlásiť chybu</string>
-    <string name="report_bug_text">Ste si istý, že chcete nahlásiť chybu? Po odoslaní prosím pridajte správu do meshtastic.discourse.group aby sme vedeli priradiť Vami nahlásenú chybu ku Vášmu príspevku.</string>
+    <string name="report_bug_text">Ste si istý, že chcete nahlásiť chybu? Po odoslaní prosím pridajte správu do Test.discourse.group aby sme vedeli priradiť Vami nahlásenú chybu ku Vášmu príspevku.</string>
     <string name="report">Odoslať chybové hlásenie</string>
     <string name="not_paired_yet">Zatiaľ ste nenapárovali žiaden vysielač.</string>
     <string name="change_radio">Zmeniť vysielač</string>
@@ -43,7 +43,7 @@
     <string name="connected_sleeping">Pripojené k uspatému vysielaču.</string>
     <string name="update_to">Aktualizovať na %s</string>
     <string name="app_too_old">Aplikácia je príliš stará</string>
-    <string name="must_update">Musíte aktualizovať aplikáciu na Google Play store (alebo z Github). Je príliš stará pre komunikáciu s touto verziou firmvéru vysielača. Viac informácií k tejto téme nájdete na <a href="https://meshtastic.org/docs/software/android/installation">Meshtastic docs</a>.</string>
+    <string name="must_update">Musíte aktualizovať aplikáciu na Google Play store (alebo z Github). Je príliš stará pre komunikáciu s touto verziou firmvéru vysielača. Viac informácií k tejto téme nájdete na <a href="https://meshtastic.org/docs/software/android/installation">Test docs</a>.</string>
     <string name="none">Žiaden (zakázať)</string>
     <string name="modem_config_short">Krátky dosah / Rýchle</string>
     <string name="modem_config_medium">Stredný dosah / Rýchle</string>
@@ -87,11 +87,11 @@
     <string name="theme_system">Predvolená systémom</string>
     <string name="choose_theme">Výber témy</string>
     <string name="background_required">Poloha na pozadí</string>
-    <string name="why_background_required">Pre túto možnosť musíte povoliť prístup ku polohe zariadenia v režime \"Vždy povolené\".\nTáto možnosť povolí aplikácii Meshtastic zistiť polohu Vášho zariadenia a odoslať ju členom Vašej siete aj keď je aplikácia Meshtastic vypnutá alebo sa nepoužíva.</string>
+    <string name="why_background_required">Pre túto možnosť musíte povoliť prístup ku polohe zariadenia v režime \"Vždy povolené\".\nTáto možnosť povolí aplikácii Test zistiť polohu Vášho zariadenia a odoslať ju členom Vašej siete aj keď je aplikácia Test vypnutá alebo sa nepoužíva.</string>
     <string name="required_permissions">Požadované oprávnenia</string>
     <string name="provide_location_to_mesh">Odoslať polohu do siete</string>
     <string name="camera_required">Práva pre prístup k fotoaparátu/kamere</string>
-    <string name="why_camera_required">Aplikácia Meshtastic potrebuje práva pre prístup ku fotoaparátu kvôli možnosti načítania QR kódov. Fotky ani videá nebudú ukladané na Vašom Android zariadení.</string>
+    <string name="why_camera_required">Aplikácia Test potrebuje práva pre prístup ku fotoaparátu kvôli možnosti načítania QR kódov. Fotky ani videá nebudú ukladané na Vašom Android zariadení.</string>
     <string name="modem_config_slow_short">Krátky dosah / Pomalé</string>
     <string name="modem_config_slow_medium">Stredný dosah / Pomalé</string>
     <string name="modem_config_slow_long">Dlhý dosah / Pomalé</string>
