@@ -20,7 +20,7 @@ class AppIntroduction : AppIntro() {
             AppIntroFragment.createInstance(
             title = resources.getString(R.string.intro_welcome),
             description = resources.getString(R.string.intro_welcome_text),
-            imageDrawable = R.mipmap.ic_launcher2_round,
+            imageDrawable = R.mipmap.ic_launcher_round,
             backgroundColorRes = R.color.colourGrey,
             descriptionColorRes = R.color.colorOnPrimary
         ))

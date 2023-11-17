@@ -135,7 +135,7 @@ class MeshServiceNotifications(
             // Newer androids also support a 'large' icon
 
             // We delay making this bitmap until we know we need it
-            largeIcon = largeIcon ?: getBitmapFromVectorDrawable(R.mipmap.ic_launcher2)
+            largeIcon = largeIcon ?: getBitmapFromVectorDrawable(R.mipmap.ic_launcher)
 
             builder.setSmallIcon(
                 // vector form icons don't work reliably on older androids
