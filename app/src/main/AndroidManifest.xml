@@ -80,7 +80,7 @@
 
     <!-- hardware acceleration is required for zxing barcode lib -->
     <application
-        android:name="com.geeksville.mesh.MeshUtilApplication"
+        android:name="com.geeksville.mta.MeshUtilApplication"
         android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="false"
@@ -102,19 +102,19 @@
 
         <!-- we need bind job service for oreo -->
         <service
-            android:name="com.geeksville.mesh.service.SoftwareUpdateService"
+            android:name="com.geeksville.mta.service.SoftwareUpdateService"
             android:enabled="true"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <!-- This is the public API for doing mesh radio operations from android apps -->
         <service
-            android:name="com.geeksville.mesh.service.MeshService"
+            android:name="com.geeksville.mta.service.MeshService"
             android:enabled="true"
             android:foregroundServiceType="connectedDevice"
             android:exported="true" tools:ignore="ExportedActivity">
             <intent-filter>
-                <action android:name="com.geeksville.mesh.Service" />
+                <action android:name="com.geeksville.mta.Service" />
             </intent-filter>
         </service>
 
@@ -134,7 +134,7 @@
             tools:replace="screenOrientation" />
 
         <activity
-            android:name="com.geeksville.mesh.MainActivity"
+            android:name="com.geeksville.mta.MainActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateAlwaysHidden"
@@ -176,7 +176,7 @@
                 android:resource="@xml/device_filter" />
         </activity>
 
-        <receiver android:name="com.geeksville.mesh.service.BootCompleteReceiver"
+        <receiver android:name="com.geeksville.mta.service.BootCompleteReceiver"
             android:exported="false">
             <!-- handle boot events -->
             <intent-filter>
@@ -188,7 +188,7 @@
                 <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
 
                 <!-- for testing -->
-                <action android:name="com.geeksville.mesh.SIM_BOOT" />
+                <action android:name="com.geeksville.mta.SIM_BOOT" />
             </intent-filter>
 
             <!-- Also restart our service if the app gets upgraded -->
@@ -197,7 +197,7 @@
                 <!-- I was using PACKAGE_REPLACED, but MY_PACKAGE_REPLACED is newer and seems cleaner
                 <data
                     android:scheme="package"
-                    android:path="com.geeksville.mesh" /> -->
+                    android:path="com.geeksville.mta" /> -->
             </intent-filter>
         </receiver>
 

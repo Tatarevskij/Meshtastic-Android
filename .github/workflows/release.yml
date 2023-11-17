@@ -92,7 +92,7 @@ jobs:
 #    - uses: r0adkll/upload-google-play@v1
 #      with:
 #        serviceAccountJsonPlainText: ${{ secrets.GSERVICES }}
-#        packageName: com.geeksville.mesh
+#        packageName: com.geeksville.mta
 #        releaseFiles: app/build/outputs/bundle/release/app-release.aab
 #        track: internal
 #        whatsNewDirectory: app/src/main/play/release-notes

@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:xxx:android:1111",
         "android_client_info": {
-          "package_name": "com.geeksville.mesh"
+          "package_name": "com.geeksville.mta"
         }
       },
       "oauth_client": [

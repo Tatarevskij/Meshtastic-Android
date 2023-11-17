@@ -17,10 +17,10 @@ you!
 alt="Get it on F-Droid"
 width="49%">](https://apt.izzysoft.de/fdroid/repo)
 [<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-alt="Download at https://play.google.com/store/apps/details?id=com.geeksville.mesh]"
-width="49%">](https://play.google.com/store/apps/details?id=com.geeksville.mesh&referrer=utm_source%3Dgithub-android-readme)
+alt="Download at https://play.google.com/store/apps/details?id=com.geeksville.mta]"
+width="49%">](https://play.google.com/store/apps/details?id=com.geeksville.mta&referrer=utm_source%3Dgithub-android-readme)
 
-If you want to join the Play Store beta program go to [this URL](https://play.google.com/apps/testing/com.geeksville.mesh) and opt-in to the alpha/beta test.
+If you want to join the Play Store beta program go to [this URL](https://play.google.com/apps/testing/com.geeksville.mta) and opt-in to the alpha/beta test.
 If you encounter any problems or have questions, [post in the forum](https://meshtastic.discourse.group/) and we'll help.
 
 However, if you must use 'raw' APKs you can get them from our [github releases](https://github.com/meshtastic/Meshtastic-Android/releases). This is not recommended because if you manually install an APK it will not automatically update.
@@ -56,7 +56,7 @@ cp ./app/special/curfirmwareversion.xml ./app/src/main/res/values/
 - on dev devices
 
 ```bash
-adb shell setprop debug.firebase.analytics.app com.geeksville.mesh
+adb shell setprop debug.firebase.analytics.app com.geeksville.mta
 adb shell setprop log.tag.FirebaseCrashlytics DEBUG
 ```
 

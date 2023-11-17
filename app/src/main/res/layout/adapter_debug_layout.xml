@@ -51,7 +51,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cloudDownloadIcon"
             app:layout_constraintVertical_weight="1"
-            tools:text="# com.geeksville.mesh.MeshProtos$MeshPacket@1b1ea594\n
+            tools:text="# com.geeksville.mta.MeshProtos$MeshPacket@1b1ea594\n
               decoded {\n
                position {\n
                altitude: 60\n
