@@ -62,7 +62,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:tabIconTint="@color/tab_color_selector"
-                app:tabIndicatorColor="@color/selectedColor" />
+                app:tabIndicatorColor="@color/selectedColor"
+                android:background="@color/colorAdvancedBackground"/>
         </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.viewpager2.widget.ViewPager2

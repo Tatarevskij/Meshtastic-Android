@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorOnPrimary">#FFFFFF</color>
-    <color name="colorPrimary">#67EA94</color>
-    <color name="colorPrimaryDark">#67EA94</color>
-    <color name="colorMsg">#F2F2F2</color>
+    <color name="colorPrimary">#d500f9 </color>
+    <color name="colorPrimaryDark">#d500f9 </color>
+    <color name="colorMsg">#212121</color>
     <color name="colorMyMsg">#EDEAF4</color>
-    <color name="colorAdvancedBackground">#FFFFFF</color>
-    <color name="colorIconTint">#000000</color>
-    <color name="colorMenuItem">#000000</color>
-    <color name="selectedColor">#67EA94</color>
-    <color name="unselectedColor">#212121</color>
-    <color name="buttonColor">#67EA94</color>
+    <color name="colorAdvancedBackground">#141414</color>
+    <color name="colorIconTint">#FFFFFF</color>
+    <color name="colorMenuItem">#FFFFFF</color>
+    <color name="selectedColor">#d500f9 </color>
+    <color name="unselectedColor">#FFFFFF</color>
+    <color name="buttonColor">#d500f9 </color>
     <color name="colourGrey">#535353</color>
 </resources>

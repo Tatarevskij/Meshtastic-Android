@@ -10,11 +10,13 @@
         android:layout_height="match_parent"
         app:cardCornerRadius="12dp"
         app:cardElevation="2dp"
-        app:cardUseCompatPadding="true">
+        app:cardUseCompatPadding="true"
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/colorAdvancedBackground">
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/shortName"
@@ -25,7 +27,8 @@
                 android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                />
 
             <TextView
                 android:id="@+id/longName"
@@ -34,7 +37,8 @@
                 android:layout_margin="8dp"
                 android:text="@string/unknown_username"
                 app:layout_constraintStart_toEndOf="@+id/shortName"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/colorMenuItem"/>
 
             <TextView
                 android:id="@+id/lastMessageText"
@@ -47,7 +51,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/shortName"
-                app:layout_constraintTop_toBottomOf="@id/longName" />
+                app:layout_constraintTop_toBottomOf="@id/longName"
+                android:textColor="@color/colorMenuItem"/>
 
             <TextView
                 android:id="@+id/lastMessageTime"
@@ -57,7 +62,8 @@
                 android:contentDescription="@string/message_reception_time"
                 android:text="3 minutes ago"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/colorMenuItem"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

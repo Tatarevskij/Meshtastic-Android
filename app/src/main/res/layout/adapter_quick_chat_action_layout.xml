@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@color/colorAdvancedBackground">
 
     <com.google.android.material.card.MaterialCardView
         style="@style/Widget.App.CardView"
@@ -15,7 +16,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/colorAdvancedBackground">
 
             <ImageView
                 android:id="@+id/quickChatActionInstant"
@@ -25,7 +27,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_baseline_fast_forward_24" />
+                app:srcCompat="@drawable/ic_baseline_fast_forward_24"
+                app:tint="@color/colorMenuItem" />
 
             <TextView
                 android:id="@+id/quickChatActionName"
@@ -35,7 +38,8 @@
                 android:layout_marginTop="8dp"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/quickChatActionInstant"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/colorMenuItem"/>
 
             <TextView
                 android:id="@+id/quickChatActionValue"
@@ -46,7 +50,8 @@
                 android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/quickChatActionInstant"
-                app:layout_constraintTop_toBottomOf="@+id/quickChatActionName" />
+                app:layout_constraintTop_toBottomOf="@+id/quickChatActionName"
+                android:background="@color/colorMenuItem"/>
 
             <ImageButton
                 android:id="@+id/quickChatActionEdit"
@@ -56,7 +61,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/quickChatActionDrag"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_baseline_edit_24" />
+                app:srcCompat="@drawable/ic_baseline_edit_24"
+                />
 
             <ImageView
                 android:id="@+id/quickChatActionDrag"
@@ -66,7 +72,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_baseline_drag_handle_24" />
+                app:srcCompat="@drawable/ic_baseline_drag_handle_24"
+                app:tint="@color/colorMenuItem"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 

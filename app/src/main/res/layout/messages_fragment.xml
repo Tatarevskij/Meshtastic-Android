@@ -72,15 +72,19 @@
         android:hint="@string/send_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/sendButton"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="@color/colourGrey">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/messageInputText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:inputType="textMultiLine|textCapSentences"
             android:maxLength="228"
-            android:text="" />
+            android:text=""
+            android:background="@color/colorMsg"
+            android:textColor="@color/colorMenuItem"
+           />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,6 +96,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textInputLayout"
-        app:srcCompat="@drawable/ic_twotone_send_24" />
+        app:srcCompat="@drawable/ic_twotone_send_24"
+        android:background="@color/colorAdvancedBackground"
+        app:tint="@color/colorMenuItem" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -60,5 +60,6 @@
         app:layout_constraintBottom_toTopOf="@+id/debug_recyclerview"
         app:layout_constraintEnd_toStartOf="@+id/clearButton"
         app:layout_constraintStart_toEndOf="@+id/closeButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/colorMenuItem"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

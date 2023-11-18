@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorOnPrimary">#67EA94</color>
+    <color name="colorOnPrimary">#d500f9 </color>
     <color name="colorPrimary">#141414</color>
     <color name="colorPrimaryDark">#141414</color>
     <color name="colorMsg">#212121</color>
@@ -8,6 +8,6 @@
     <color name="colorAdvancedBackground">#141414</color>
     <color name="colorIconTint">#FFFFFF</color>
     <color name="colorMenuItem">#FFFFFF</color>
-    <color name="selectedColor">#67EA94</color>
+    <color name="selectedColor">#d500f9 </color>
     <color name="unselectedColor">#AAAAAA</color>
 </resources>

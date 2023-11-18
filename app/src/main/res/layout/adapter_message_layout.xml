@@ -44,7 +44,8 @@
                 android:text="@string/sample_message"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/username"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/colorMenuItem"/>
 
             <ImageView
                 android:id="@+id/messageStatusIcon"
@@ -54,7 +55,8 @@
                 android:contentDescription="@string/message_reception_state"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/messageText"
-                app:srcCompat="@drawable/cloud_on" />
+                app:srcCompat="@drawable/cloud_on"
+                app:tint="@color/colorMenuItem" />
 
             <TextView
                 android:id="@+id/messageTime"
@@ -66,7 +68,8 @@
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/messageStatusIcon"
-                app:layout_constraintTop_toBottomOf="@id/messageText" />
+                app:layout_constraintTop_toBottomOf="@id/messageText"
+                android:textColor="@color/colorMenuItem"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

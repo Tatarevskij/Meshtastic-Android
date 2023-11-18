@@ -14,6 +14,20 @@
         <item name="android:itemTextAppearance">@style/menu_item_color</item>
         <item name="actionModeStyle">@style/MyActionMode</item>
         <item name="windowActionModeOverlay">true</item>
+
+        <item name="popupMenuBackground">@color/colorAdvancedBackground</item>
+
+        <item name="android:radioButtonStyle">@style/Radio</item>
+
+        <item name="colorControlActivated">@color/colorMenuItem</item>
+        <item name="colorControlNormal">@color/colourGrey</item>
+
+    </style>
+
+    <style name="Radio" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/colorMenuItem</item>
+        <item name="android:buttonTint">@color/selectedColor</item>
+
     </style>
 
     <style name="AppTheme.Spinner">

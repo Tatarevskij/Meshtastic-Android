@@ -4,7 +4,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp">
+    android:layout_margin="16dp"
+    android:background="@color/colorAdvancedBackground">
 
     <EditText
         android:id="@+id/waypointName"
@@ -13,7 +14,9 @@
         android:layout_margin="8dp"
         android:hint="@string/name"
         android:inputType="textShortMessage"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColorHint="@color/colorMenuItem"
+        android:textColor="@color/colorMenuItem" />
 
     <EditText
         android:id="@+id/waypointDescription"
@@ -22,7 +25,9 @@
         android:layout_margin="8dp"
         android:hint="@string/description"
         android:inputType="textMultiLine"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColorHint="@color/colorMenuItem"
+        android:textColor="@color/colorMenuItem"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -36,7 +41,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/sl_lock_24dp" />
+            app:srcCompat="@drawable/sl_lock_24dp"
+            app:tint="@color/colorIconTint"/>
 
         <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/waypointLocked"
@@ -49,7 +55,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageLock"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/colorMenuItem"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

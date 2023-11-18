@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAdvancedBackground"
     android:fillViewport="true"
     tools:context=".MainActivity">
 
@@ -14,57 +15,57 @@
         android:layout_marginTop="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/nodeSettings"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"
-        >
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/usernameView"
+            android:id="@+id/nodeSettings"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:hint="@string/your_name"
-            app:layout_constraintHorizontal_weight="2"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/regionSpinner"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/usernameEditText"
-                android:layout_width="match_parent"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernameView"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:imeOptions="actionDone"
-                android:singleLine="true" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginStart="16dp"
+                android:hint="@string/your_name"
+                app:layout_constraintEnd_toStartOf="@+id/regionSpinner"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/regionLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/region"
-            app:layout_constraintEnd_toEndOf="@+id/regionSpinner"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Region" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/usernameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <Spinner
-            android:id="@+id/regionSpinner"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="16dp"
-            android:theme="@style/AppTheme.Spinner"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/regionLabel"
-            app:layout_constraintStart_toEndOf="@+id/usernameView"
-            />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/regionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/region"
+                android:textColor="@color/colorMenuItem"
+                app:layout_constraintEnd_toEndOf="@+id/regionSpinner"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Region" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <Spinner
+                android:id="@+id/regionSpinner"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/colorMenuItem"
+                android:theme="@style/AppTheme.Spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/usernameView"
+                app:layout_constraintTop_toBottomOf="@id/regionLabel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/scanStatusText"
@@ -74,6 +75,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:text="@string/looking_for_meshtastic_devices"
+            android:textColor="@color/colorMenuItem"
             app:layout_constraintEnd_toStartOf="@+id/updateFirmwareButton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nodeSettings" />
@@ -98,23 +100,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/scanStatusText">
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/test_devname1" />
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
                 android:id="@+id/radioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/test_devname2" />
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
                 android:id="@+id/radioButtonManual"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/ip_address" />
+                android:text="@string/ip_address"
+                />
 
             <EditText
                 android:id="@+id/editManualAddress"
@@ -123,6 +126,8 @@
                 android:ems="10"
                 android:hint="@string/ip_address"
                 android:inputType="number|text"
+                android:textColor="@color/colorMenuItem"
+                android:textColorHint="@color/colourGrey"
                 android:visibility="visible" />
 
         </RadioGroup>
@@ -133,9 +138,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:contentDescription="@string/change_radio"
-            app:srcCompat="@drawable/ic_twotone_add_24"
+            app:layout_constraintBottom_toTopOf="@+id/reportBugButton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/reportBugButton" />
+            app:srcCompat="@drawable/ic_twotone_add_24" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/updateFirmwareButton"
@@ -162,6 +167,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="@string/provide_location_to_mesh"
+            android:textColor="@color/colorMenuItem"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/deviceRadioGroup" />
 
@@ -175,6 +181,7 @@
             android:ems="10"
             android:gravity="start|top"
             android:text="@string/warning_not_paired"
+            android:textColor="@color/colorMenuItem"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/provideLocationCheckbox" />
@@ -189,6 +196,7 @@
             android:background="@android:color/transparent"
             android:checked="true"
             android:text="@string/analytics_okay"
+            android:textColor="@color/colorMenuItem"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/reportBugButton"
             app:layout_constraintStart_toStartOf="parent"

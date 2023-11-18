@@ -3,17 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:clipToPadding="false">
+    android:clipToPadding="false"
+
+    >
 
     <com.google.android.material.card.MaterialCardView
         style="@style/Widget.App.CardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:layout_margin="8dp"
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/colorAdvancedBackground">
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_node"
@@ -32,7 +36,8 @@
                 android:layout_marginStart="8dp"
                 android:text="@string/unknown_username"
                 app:layout_constraintStart_toEndOf="@+id/chip_node"
-                app:layout_constraintTop_toTopOf="@+id/chip_node" />
+                app:layout_constraintTop_toTopOf="@+id/chip_node"
+                android:textColor="@color/colorMenuItem"/>
 
             <TextView
                 android:id="@+id/distance_view"
@@ -42,7 +47,8 @@
                 android:text="@string/sample_distance"
                 app:layout_constraintEnd_toEndOf="@+id/chip_node"
                 app:layout_constraintStart_toStartOf="@+id/chip_node"
-                app:layout_constraintTop_toBottomOf="@+id/chip_node" />
+                app:layout_constraintTop_toBottomOf="@+id/chip_node"
+                android:textColor="@color/colorMenuItem"/>
 
             <TextView
                 android:id="@+id/coords_view"
@@ -53,7 +59,8 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 app:layout_constraintStart_toEndOf="@+id/chip_node"
                 app:layout_constraintTop_toBottomOf="@+id/nodeNameView"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.0"
+                android:textColor="@color/colorMenuItem"/>
 
             <ImageView
                 android:id="@+id/batteryIcon"
@@ -63,7 +70,8 @@
                 android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toStartOf="@+id/batteryPercentageView"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_battery_full_24" />
+                app:srcCompat="@drawable/ic_battery_full_24"
+                app:tint="@color/colorMenuItem" />
 
             <TextView
                 android:id="@+id/batteryPercentageView"
@@ -73,7 +81,8 @@
                 android:text="100%"
                 app:layout_constraintBottom_toBottomOf="@+id/nodeNameView"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/nodeNameView" />
+                app:layout_constraintTop_toTopOf="@+id/nodeNameView"
+                android:textColor="@color/colorMenuItem"/>
 
             <ImageView
                 android:id="@+id/lastCommIcon"
@@ -85,7 +94,8 @@
                 app:layout_constraintBottom_toTopOf="@id/signalView"
                 app:layout_constraintEnd_toStartOf="@+id/lastConnectionView"
                 app:layout_constraintTop_toBottomOf="@id/batteryIcon"
-                app:srcCompat="@drawable/ic_antenna_24" />
+                app:srcCompat="@drawable/ic_antenna_24"
+                app:tint="@color/colorMenuItem"/>
 
             <TextView
                 android:id="@+id/lastConnectionView"
@@ -96,7 +106,8 @@
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@+id/lastCommIcon"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/lastCommIcon" />
+                app:layout_constraintTop_toTopOf="@+id/lastCommIcon"
+                android:textColor="@color/colorMenuItem"/>
 
             <TextView
                 android:id="@+id/signalView"
@@ -106,7 +117,8 @@
                 android:text="rssi:-40 snr:-8"
                 app:layout_constraintBottom_toTopOf="@id/envMetrics"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/lastConnectionView" />
+                app:layout_constraintTop_toBottomOf="@id/lastConnectionView"
+                android:textColor="@color/colorMenuItem"/>
 
             <TextView
                 android:id="@+id/envMetrics"
@@ -116,7 +128,8 @@
                 android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/colorMenuItem"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
