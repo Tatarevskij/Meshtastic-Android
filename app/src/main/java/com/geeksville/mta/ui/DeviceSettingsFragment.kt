@@ -41,6 +41,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.compose.ui.res.painterResource
@@ -88,6 +89,7 @@ import com.geeksville.mta.ui.components.config.SerialConfigItemList
 import com.geeksville.mta.ui.components.config.StoreForwardConfigItemList
 import com.geeksville.mta.ui.components.config.TelemetryConfigItemList
 import com.geeksville.mta.ui.components.config.UserConfigItemList
+import com.geeksville.mta.ui.theme.AppTheme
 import com.google.accompanist.themeadapter.appcompat.AppCompatTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -108,7 +110,7 @@ class DeviceSettingsFragment : ScreenFragment("Radio Configuration"), Logging {
                 // TODO change destNode to destNum and pass as navigation argument
                 val node by model.destNode.collectAsStateWithLifecycle()
 
-                AppCompatTheme {
+                AppTheme {
                     val navController: NavHostController = rememberNavController()
                     // Get current back stack entry
                     // val backStackEntry by navController.currentBackStackEntryAsState()
@@ -213,7 +215,8 @@ private fun MeshAppBar(
                     )
                 }
             }
-        }
+        },
+        contentColor = Color.White
     )
 }
 
@@ -721,5 +724,7 @@ private fun RadioSettingsScreen(
 @Preview(showBackground = true)
 @Composable
 private fun RadioSettingsScreenPreview() {
-    RadioSettingsScreen()
+    AppTheme() {
+        RadioSettingsScreen()
+    }
 }

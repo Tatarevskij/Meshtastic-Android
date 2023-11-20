@@ -56,6 +56,7 @@ import com.geeksville.mta.ui.map.components.DownloadButton
 import com.geeksville.mta.ui.map.components.EditWaypointDialog
 import com.geeksville.mta.ui.components.IconButton
 import com.geeksville.mta.ui.map.components.rememberMapViewWithLifecycle
+import com.geeksville.mta.ui.theme.AppTheme
 import com.geeksville.mta.util.SqlTileWriterExt
 import com.geeksville.mta.util.requiredZoomLevel
 import com.geeksville.mta.util.formatAgo
@@ -103,7 +104,7 @@ class MapFragment : ScreenFragment("Map Fragment"), Logging {
         return ComposeView(requireContext()).apply {
             setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
             setContent {
-                AppCompatTheme {
+                AppTheme {
                     MapView(model)
                 }
             }

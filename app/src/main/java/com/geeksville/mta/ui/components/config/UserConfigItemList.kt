@@ -27,9 +27,15 @@ import com.geeksville.mta.user
 
 @Composable
 fun UserConfigItemList(
-    userConfig: MeshProtos.User,
-    enabled: Boolean,
-    onSaveClicked: (MeshProtos.User) -> Unit,
+    userConfig: MeshProtos.User = user {
+        id = "!a280d9c8"
+        longName = "Meshtastic d9c8"
+        shortName = "d9c8"
+        hwModel = MeshProtos.HardwareModel.RAK4631
+        isLicensed = false
+    },
+    enabled: Boolean = true,
+    onSaveClicked: (MeshProtos.User) -> Unit = {},
 ) {
     val focusManager = LocalFocusManager.current
     var userInput by remember(userConfig) { mutableStateOf(userConfig) }
@@ -106,7 +112,7 @@ fun UserConfigItemList(
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = false)
 @Composable
 private fun UserConfigPreview() {
     UserConfigItemList(

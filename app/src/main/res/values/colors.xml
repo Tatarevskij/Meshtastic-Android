@@ -4,12 +4,12 @@
     <color name="colorPrimary">#d500f9 </color>
     <color name="colorPrimaryDark">#d500f9 </color>
     <color name="colorMsg">#212121</color>
-    <color name="colorMyMsg">#EDEAF4</color>
+    <color name="colorMyMsg">#28463C</color>
     <color name="colorAdvancedBackground">#141414</color>
     <color name="colorIconTint">#FFFFFF</color>
     <color name="colorMenuItem">#FFFFFF</color>
-    <color name="selectedColor">#d500f9 </color>
-    <color name="unselectedColor">#FFFFFF</color>
+    <color name="selectedColor">#FFFFFF </color>
+    <color name="unselectedColor">#AAAAAA</color>
     <color name="buttonColor">#d500f9 </color>
     <color name="colourGrey">#535353</color>
 </resources>

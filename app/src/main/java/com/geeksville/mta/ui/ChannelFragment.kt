@@ -89,6 +89,7 @@ import com.geeksville.mta.ui.components.DropDownPreference
 import com.geeksville.mta.ui.components.PreferenceFooter
 import com.geeksville.mta.ui.components.config.ChannelCard
 import com.geeksville.mta.ui.components.config.EditChannelDialog
+import com.geeksville.mta.ui.theme.AppTheme
 import com.google.accompanist.themeadapter.appcompat.AppCompatTheme
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.journeyapps.barcodescanner.ScanContract
@@ -112,7 +113,7 @@ class ChannelFragment : ScreenFragment("Channel"), Logging {
                 val scope = rememberCoroutineScope()
                 val snackbarHostState = remember { SnackbarHostState() }
 
-                AppCompatTheme {
+                AppTheme {
                     Scaffold(
                         snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
                     ) { paddingValues ->

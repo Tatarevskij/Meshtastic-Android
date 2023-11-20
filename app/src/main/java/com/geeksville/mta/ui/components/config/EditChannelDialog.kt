@@ -37,6 +37,7 @@ import com.geeksville.mta.R
 import com.geeksville.mta.channelSettings
 import com.geeksville.mta.model.Channel
 import com.geeksville.mta.ui.components.EditTextPreference
+import com.geeksville.mta.ui.theme.AppTheme
 import com.google.accompanist.themeadapter.appcompat.AppCompatTheme
 import com.google.protobuf.ByteString
 import com.google.protobuf.kotlin.toByteString
@@ -72,7 +73,7 @@ fun EditChannelDialog(
     AlertDialog(
         onDismissRequest = onDismissRequest,
         text = {
-            AppCompatTheme {
+            AppTheme {
                 Column(modifier.fillMaxWidth()) {
                     var isFocused by remember { mutableStateOf(false) }
                     EditTextPreference(

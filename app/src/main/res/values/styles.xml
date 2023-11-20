@@ -26,23 +26,22 @@
 
     <style name="Radio" parent="Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:textColor">@color/colorMenuItem</item>
-        <item name="android:buttonTint">@color/selectedColor</item>
-
     </style>
 
-    <style name="AppTheme.Spinner">
+    <style name="AppTheme.Spinner" parent="Widget.AppCompat.Spinner">
         <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
         <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
     </style>
 
-    <style name="SpinnerItem">
+    <style name="SpinnerItem" parent="Widget.AppCompat.TextView.SpinnerItem">
         <item name="android:gravity">right|center_vertical</item>
         <item name="android:paddingRight">16dp</item>
     </style>
 
-    <style name="SpinnerDropDownItem">
+    <style name="SpinnerDropDownItem" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
         <item name="android:gravity">right|center_vertical</item>
         <item name="android:paddingRight">16dp</item>
+
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -75,10 +74,10 @@
     </style>
 
     <style name="CustomMaterialDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
-        <!-- Background Color
-        <item name="android:background">#006db3</item> -->
-        <!-- Text Color for title and message
-        <item name="colorOnSurface">@color/unselectedColor</item> -->
+         <!--Background Color-->
+        <item name="android:background">@color/colorAdvancedBackground</item>
+         <!--Text Color for title and message-->
+        <item name="colorOnSurface">@color/unselectedColor</item>
         <!-- Text Color for buttons -->
         <item name="colorPrimary">@color/unselectedColor</item>
     </style>
@@ -117,5 +116,7 @@
         // Set the theme of the Activity that directly follows your splash screen.
         <item name="postSplashScreenTheme">@style/AppTheme</item>  # Required.
     </style>
+
+
 
 </resources>

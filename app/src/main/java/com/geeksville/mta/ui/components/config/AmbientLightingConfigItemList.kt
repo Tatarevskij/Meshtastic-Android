@@ -18,6 +18,7 @@ import com.geeksville.mta.ui.components.EditTextPreference
 import com.geeksville.mta.ui.components.PreferenceCategory
 import com.geeksville.mta.ui.components.PreferenceFooter
 import com.geeksville.mta.ui.components.SwitchPreference
+import com.geeksville.mta.ui.theme.AppTheme
 
 @Composable
 fun AmbientLightingConfigItemList(
@@ -68,7 +69,9 @@ fun AmbientLightingConfigItemList(
                 value = ambientLightingInput.green,
                 enabled = enabled,
                 keyboardActions = KeyboardActions(onDone = { focusManager.clearFocus() }),
-                onValueChanged = { ambientLightingInput = ambientLightingInput.copy { green = it } })
+                onValueChanged = {
+                    ambientLightingInput = ambientLightingInput.copy { green = it }
+                })
         }
 
         item {
@@ -95,12 +98,14 @@ fun AmbientLightingConfigItemList(
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = false)
 @Composable
 private fun AmbientLightingConfigPreview() {
-    AmbientLightingConfigItemList(
-        ambientLightingConfig = ModuleConfigProtos.ModuleConfig.AmbientLightingConfig.getDefaultInstance(),
-        enabled = true,
-        onSaveClicked = { },
-    )
+    AppTheme {
+        AmbientLightingConfigItemList(
+            ambientLightingConfig = ModuleConfigProtos.ModuleConfig.AmbientLightingConfig.getDefaultInstance(),
+            enabled = true,
+            onSaveClicked = { },
+        )
+    }
 }

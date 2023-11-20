@@ -12,12 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        >
+        app:cardBackgroundColor="@color/colorAdvancedBackground">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAdvancedBackground">
+            android:layout_height="wrap_content">
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_node"
@@ -35,9 +34,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="@string/unknown_username"
+                android:textColor="@color/colorMenuItem"
                 app:layout_constraintStart_toEndOf="@+id/chip_node"
-                app:layout_constraintTop_toTopOf="@+id/chip_node"
-                android:textColor="@color/colorMenuItem"/>
+                app:layout_constraintTop_toTopOf="@+id/chip_node" />
 
             <TextView
                 android:id="@+id/distance_view"
@@ -45,10 +44,10 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:text="@string/sample_distance"
+                android:textColor="@color/colorMenuItem"
                 app:layout_constraintEnd_toEndOf="@+id/chip_node"
                 app:layout_constraintStart_toStartOf="@+id/chip_node"
-                app:layout_constraintTop_toBottomOf="@+id/chip_node"
-                android:textColor="@color/colorMenuItem"/>
+                app:layout_constraintTop_toBottomOf="@+id/chip_node" />
 
             <TextView
                 android:id="@+id/coords_view"
@@ -57,10 +56,10 @@
                 android:layout_margin="8dp"
                 android:text="@string/sample_coords"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorMenuItem"
                 app:layout_constraintStart_toEndOf="@+id/chip_node"
                 app:layout_constraintTop_toBottomOf="@+id/nodeNameView"
-                app:layout_constraintVertical_bias="0.0"
-                android:textColor="@color/colorMenuItem"/>
+                app:layout_constraintVertical_bias="0.0" />
 
             <ImageView
                 android:id="@+id/batteryIcon"
@@ -79,10 +78,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:text="100%"
+                android:textColor="@color/colorMenuItem"
                 app:layout_constraintBottom_toBottomOf="@+id/nodeNameView"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/nodeNameView"
-                android:textColor="@color/colorMenuItem"/>
+                app:layout_constraintTop_toTopOf="@+id/nodeNameView" />
 
             <ImageView
                 android:id="@+id/lastCommIcon"
@@ -95,7 +94,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/lastConnectionView"
                 app:layout_constraintTop_toBottomOf="@id/batteryIcon"
                 app:srcCompat="@drawable/ic_antenna_24"
-                app:tint="@color/colorMenuItem"/>
+                app:tint="@color/colorMenuItem" />
 
             <TextView
                 android:id="@+id/lastConnectionView"
@@ -103,11 +102,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:text="11h01 PM"
+                android:textColor="@color/colorMenuItem"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@+id/lastCommIcon"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/lastCommIcon"
-                android:textColor="@color/colorMenuItem"/>
+                app:layout_constraintTop_toTopOf="@+id/lastCommIcon" />
 
             <TextView
                 android:id="@+id/signalView"
@@ -115,21 +114,21 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:text="rssi:-40 snr:-8"
+                android:textColor="@color/colorMenuItem"
                 app:layout_constraintBottom_toTopOf="@id/envMetrics"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/lastConnectionView"
-                android:textColor="@color/colorMenuItem"/>
+                app:layout_constraintTop_toBottomOf="@id/lastConnectionView" />
 
             <TextView
                 android:id="@+id/envMetrics"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:textColor="@color/colorMenuItem"
                 android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:textColor="@color/colorMenuItem"/>
+                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>

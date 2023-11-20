@@ -21,6 +21,7 @@ import com.geeksville.mta.ClientOnlyProtos
 import com.geeksville.mta.R
 import com.geeksville.mta.deviceProfile
 import com.geeksville.mta.ui.components.SwitchPreference
+import com.geeksville.mta.ui.theme.AppTheme
 import com.google.accompanist.themeadapter.appcompat.AppCompatTheme
 
 @Composable
@@ -41,7 +42,7 @@ fun EditDeviceProfileDialog(
         title = { Text(title) },
         onDismissRequest = onDismissRequest,
         text = {
-            AppCompatTheme {
+            AppTheme {
                 Column(modifier.fillMaxWidth()) {
                     SwitchPreference(title = "longName",
                         checked = longNameInput,

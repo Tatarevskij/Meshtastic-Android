@@ -268,8 +268,8 @@ class SettingsFragment : ScreenFragment("Settings"), Logging {
         // init our region spinner
         val spinner = binding.regionSpinner
         val regionAdapter =
-            ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, regions)
-        regionAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            ArrayAdapter(requireContext(), R.layout.custom_spinner_item, regions)
+        regionAdapter.setDropDownViewResource(R.layout.custom_spinner_dropdown_item)
         spinner.adapter = regionAdapter
 
         model.ourNodeInfo.asLiveData().observe(viewLifecycleOwner) { node ->

@@ -53,14 +53,12 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Region" />
 
-            <Spinner
+            <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/regionSpinner"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="16dp"
-                android:textColor="@color/colorMenuItem"
-                android:theme="@style/AppTheme.Spinner"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/usernameView"
                 app:layout_constraintTop_toBottomOf="@id/regionLabel" />
@@ -104,20 +102,22 @@
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/test_devname1" />
+                android:text="@string/test_devname1"
+                android:textColor="@color/unselectedColor" />
 
             <androidx.appcompat.widget.AppCompatRadioButton
                 android:id="@+id/radioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/test_devname2" />
+                android:text="@string/test_devname2"
+                android:textColor="@color/unselectedColor" />
 
             <androidx.appcompat.widget.AppCompatRadioButton
                 android:id="@+id/radioButtonManual"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/ip_address"
-                />
+                android:textColor="@color/unselectedColor" />
 
             <EditText
                 android:id="@+id/editManualAddress"
@@ -127,7 +127,7 @@
                 android:hint="@string/ip_address"
                 android:inputType="number|text"
                 android:textColor="@color/colorMenuItem"
-                android:textColorHint="@color/colourGrey"
+                android:textColorHint="@color/unselectedColor"
                 android:visibility="visible" />
 
         </RadioGroup>
